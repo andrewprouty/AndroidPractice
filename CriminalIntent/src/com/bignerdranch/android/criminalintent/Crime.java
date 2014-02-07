@@ -15,6 +15,10 @@ public class Crime {
 		mId = UUID.randomUUID();
 		mDate = new Date();
 	}
+	
+	public String toString() {
+		return mTitle;
+	}
 
 	public UUID getId() {
 		return mId;
@@ -36,7 +40,7 @@ public class Crime {
 		mDate = date;
 	}
 
-	public Boolean getSolved() {
+	public Boolean isSolved() {
 		return mSolved;
 	}
 
