@@ -20,7 +20,7 @@ public class QuizActivity extends Activity {
 	private Button mTrueButton;
 	private Button mFalseButton;
 	private Button mNextButton;
-	private Button mCheatButton;
+	private Button mGoButton;
 	private TextView mQuestionTextView;
 	private TrueFalse[] mQuestionBank = new TrueFalse[] {
 			new TrueFalse(R.string.question_oceans, true),
@@ -119,8 +119,8 @@ public class QuizActivity extends Activity {
 			mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
 		}
 
-		mCheatButton = (Button)findViewById(R.id.cheat_button);
-		mCheatButton.setOnClickListener(new View.OnClickListener() {
+		mGoButton = (Button)findViewById(R.id.cheat_button);
+		mGoButton.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
