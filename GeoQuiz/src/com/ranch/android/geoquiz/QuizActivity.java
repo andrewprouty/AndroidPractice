@@ -67,6 +67,7 @@ public class QuizActivity extends Activity {
 	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		Log.d(TAG, "onActivityResult()");
 		if (data == null) {
 			return;
 		}
